@@ -1,0 +1,33 @@
+{% extends "default.html" %}
+
+{% block body %}
+<div class="container h-100">
+    <div class="row h-100 justify-content-center">
+        <div class="col col-md-8 pt-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">File name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in list %}
+                    <tr>
+                        <td><a href="{{file_url}}{{item.name}}.{{item.type}}"><span>{{item.name}}</span></a></td>
+                        <td>{{item.type}}</td>
+                        <td>{{item.date|date:"Y-m-d"}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><a href="{{previous_url}}">&lt; previous</a> :: <a href="{{next_url}}">next &gt;</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

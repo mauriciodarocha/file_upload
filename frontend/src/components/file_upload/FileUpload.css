@@ -1,0 +1,66 @@
+.display-none {
+    display: none;
+}
+.lbl {
+    text-align: center;
+}
+.lbl-main {
+    padding: 10px 0 20px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+.lbl-drop {
+    margin: 0;
+    padding: 6px 0 5px 0;
+    font-size: 1rem;
+}
+.drag-n-drop {
+    padding: 20px 25px;
+    background-color: #bee9ff;
+    border: 1px solid #11088e;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 600px;
+    left: 50%;
+    top: 25%;
+    translate: -300px;
+    position: absolute;
+}
+.droppable-area {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px dashed #999;
+    border-radius: 8px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.file-list {
+    margin-top: 6px;
+    max-height: 150px;
+    overflow: auto;
+}
+.file-list.show-scroll {
+    padding-right: 10px;
+}
+.file-list .file {
+    padding: 5px 8px 7px 8px;
+    border: 1px solid #dff4ff;
+    border-radius: 7px;
+    white-space: nowrap;
+}
+.file-list .file:not(:first-child) {
+    margin-top: 6px;
+}
+.file-loaded {
+    position: relative;
+    z-index: -1;
+}
+.file-loaded > div {
+    position: absolute;
+    background-color: #ecf8ff;
+    height: 26px;
+    transition: width 2s ease-in-out;
+}
+.filename {
+    padding: 0 6px;
+}

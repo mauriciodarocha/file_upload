@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "file-upload"
+version = "0.1.0"
+description = ""
+authors = ["Mauricio A.da Rocha <mauriciodarocha@gmail.com>"]
+readme = "README.md"
+packages = [{include = "file_upload"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "4.1.4"
+django-cors-headers = "^3.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+pep8 = "^1.7.1"
+pylint = "^2.15.9"
+pylint-django = "^2.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

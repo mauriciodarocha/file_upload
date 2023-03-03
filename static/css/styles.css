@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    background-color: #dff4ff;
+}
+a {
+    color: #646464;
+    text-decoration: none;
+    width: 100%;
+}
+a:hover {
+    color: #3c3c3c;
+}
+a:hover span {
+    border-bottom: 1px solid #b4b4b4;
+}
+table thead  {
+    background-color: #400097;
+    color: #ffffff;
+}
+table td {
+    color: #646464;
+}
+table tbody a {
+    display: inline-block;
+}
+table tbody a:visited {
+    color: #646464;
+}
+table tfoot td {
+    text-align: right;
+}
